@@ -1,0 +1,60 @@
+<InstanceHierarchy Name="RobotCell">
+  <InternalElement ID="AF138E59-0000-17AC-556E-B81A0000323E" Name="1">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B81A0000323F" Name="2">
+      <InternalElement ID="AF138E59-0000-17AC-556E-B85100003266" Name="5">
+        <Attribute Name="Frame">
+          <Attribute Name="x">
+            <Value>-7.366172</Value>
+          </Attribute>
+          <Attribute Name="y">
+            <Value>6.379493</Value>
+          </Attribute>
+          <Attribute Name="z">
+            <Value>2.394861</Value>
+          </Attribute>
+          <Attribute Name="rx">
+            <Value>4.499</Value>
+          </Attribute>
+          <Attribute Name="ry">
+            <Value>90</Value>
+          </Attribute>
+          <Attribute Name="rz">
+            <Value>0</Value>
+          </Attribute>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+      </InternalElement>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A1" Name="6">
+      <InternalElement ID="AF138E59-0000-17AC-556E-B8F6000032C7" Name="9">
+        <Attribute Name="Frame">
+          <Attribute Name="x">
+            <Value>-7.491077</Value>
+          </Attribute>
+          <Attribute Name="y">
+            <Value>3.60465</Value>
+          </Attribute>
+          <Attribute Name="z">
+            <Value>2.650281</Value>
+          </Attribute>
+          <Attribute Name="rx">
+            <Value>73.172</Value>
+          </Attribute>
+          <Attribute Name="ry">
+            <Value>34.473</Value>
+          </Attribute>
+          <Attribute Name="rz">
+            <Value>97.709</Value>
+          </Attribute>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+      </InternalElement>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DA" Name="10">
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+  </InternalElement>
+</InstanceHierarchy>

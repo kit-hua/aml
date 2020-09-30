@@ -1,0 +1,1242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="exchange.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd">
+    <AdditionalInformation>
+        <WriterHeader>
+            <WriterName>AutomationML Editor</WriterName>
+            <WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+            <WriterVendor>AutomationML e.V.</WriterVendor>
+            <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+            <WriterVersion>4.7.0.0</WriterVersion>
+            <WriterRelease>4.7.0.0</WriterRelease>
+            <LastWritingDateTime>2018-11-09T16:56:22.5292437+01:00</LastWritingDateTime>
+            <WriterProjectTitle>unspecified</WriterProjectTitle>
+            <WriterProjectID>unspecified</WriterProjectID>
+        </WriterHeader>
+    </AdditionalInformation>
+    <AdditionalInformation AutomationMLVersion="2.0" />
+    <InstanceHierarchy Name="TF1-Equality-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="58a73ecf-7df7-4327-9894-d6dad53108e4">
+            <Attribute Name="queryConfig"></Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Equality-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE2" ID="b2e677ac-2694-4b29-9ed4-9dbc30203d3c">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>58a73ecf-7df7-4327-9894-d6dad53108e4</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Subclass1-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="e3392ecb-ce6c-4a09-bfd1-39e6f29343b2">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Frame">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                        <Value>True</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="y" AttributeDataType="xs:double">
+                    <Constraint Name="requiredValue">
+                        <OrdinalScaledType>
+                            <RequiredMaxValue>5</RequiredMaxValue>
+                            <RequiredMinValue />
+                        </OrdinalScaledType>
+                    </Constraint>
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Subclass1-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE2" ID="c4a6ffe1-c650-40ad-b962-025c2cb0e41f">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>e3392ecb-ce6c-4a09-bfd1-39e6f29343b2</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRobotX" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Subclass2-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="e7ed2f6f-175a-4e11-b7c1-dc1f15b23be4">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Frame">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                        <Value>True</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="y" AttributeDataType="xs:double">
+                    <Constraint Name="requiredValue">
+                        <OrdinalScaledType>
+                            <RequiredMaxValue>5</RequiredMaxValue>
+                            <RequiredMinValue />
+                        </OrdinalScaledType>
+                    </Constraint>
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+        <InternalElement Name="IE2" ID="5936091a-5b82-4a65-89d9-b4b90109c0de">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Frame">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                        <Value>True</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="y" AttributeDataType="xs:double">
+                    <Constraint Name="requiredValue">
+                        <OrdinalScaledType>
+                            <RequiredMaxValue />
+                            <RequiredMinValue>5</RequiredMinValue>
+                        </OrdinalScaledType>
+                    </Constraint>
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Subclass2-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE3" ID="15d25fd0-b746-4c44-a614-474b2c3d5067">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>e7ed2f6f-175a-4e11-b7c1-dc1f15b23be4</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRobotX" />
+        </InternalElement>
+        <InternalElement Name="IE4" ID="e2c9041c-7ac7-4181-a2d4-6eb4d560155d">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>5936091a-5b82-4a65-89d9-b4b90109c0de</Value>
+                </Attribute>
+            </Attribute><RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRobotY" />
+            
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Superclass1-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="932f9da3-1ec9-4ffd-8f0c-d64a0ee91d3a">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE2" ID="f5017fc7-6387-4897-a2b3-f8dc1d56db20">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="6fb8ab98-6089-4bed-92db-0f7f9db74fe5">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Superclass1-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="05aefb93-055a-4e47-8180-a76432336a5d">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>f5017fc7-6387-4897-a2b3-f8dc1d56db20</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyResource" />
+        </InternalElement>
+        <InternalElement Name="IE5" ID="05aefb93-055a-4e47-8180-a76432336a51">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>6fb8ab98-6089-4bed-92db-0f7f9db74fe5</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyResource" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Superclass2-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="528df073-0b4e-44f7-acea-97d16a3ca0d3">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE2" ID="a218c33c-6006-4170-b1f6-f6ce3d9762b5">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                        <Value>0</Value>
+                    </Attribute>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="4e9680b8-cd73-407d-aad5-b580f1861eb9">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                        <Value>0</Value>
+                    </Attribute>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Superclass2-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="5d20de0c-ebb7-4e60-8472-23ff4b897ae7">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>a218c33c-6006-4170-b1f6-f6ce3d9762b5</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyResource" />
+        </InternalElement>
+        <InternalElement Name="IE5" ID="5d20de0c-ebb7-4e60-8472-23ff4b897a12">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>4e9680b8-cd73-407d-aad5-b580f1861eb9</Value>                    
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyResource" />
+        </InternalElement>        
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Superclass3-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="f53183c0-1292-4962-9d9a-7080866848c6">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+                <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+        <InternalElement Name="IE2" ID="263ccbf6-3358-49b5-a89c-8b004c4faeab">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+                <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF1-Superclass3-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE3" ID="73affe10-fb3d-4f13-8cda-d5fea55099b4">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>f53183c0-1292-4962-9d9a-7080866848c6</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyResource" />
+        </InternalElement>
+        <InternalElement Name="IE4" ID="73affe10-fb3d-4f13-8cda-d5fea5509912">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">                    
+                    <Value>263ccbf6-3358-49b5-a89c-8b004c4faeab</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyResource" />
+        </InternalElement>        
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF2-Renaming-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="743078a8-f0fd-4944-881e-815b637c2fd6">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Frame">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                        <Value>True</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="x" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="y" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="z" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="rx" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="ry" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="rz" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF2-Renaming-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE2" ID="fcfe46ae-d49a-4145-8bab-dd3c90c2455f">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>743078a8-f0fd-4944-881e-815b637c2fd6</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Coordinates">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="tx" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame/x</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="ty" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame/y</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="tz" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame/z</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="rx" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame/rx</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="ry" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame/ry</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="rz" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>743078a8-f0fd-4944-881e-815b637c2fd6/Frame/rz</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-Projection-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="bccb1739-b8cd-4039-9e4d-6eb5b7a01c57">
+            <Attribute Name="queryConfig"></Attribute>
+            <InternalElement Name="IE2" ID="afa99025-3d4a-45d7-9c8c-702610889702">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-Projection-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE3" ID="4e7158ff-d394-40d6-921a-3aaea0a90b2d">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>bccb1739-b8cd-4039-9e4d-6eb5b7a01c57</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE4" ID="58588573-ec0c-459c-bbb2-64326cd1e634">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>afa99025-3d4a-45d7-9c8c-702610889702</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-NestedProjection1-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="3d0f2f85-5532-4d5a-b2bb-eb5e26059a47">
+            <Attribute Name="queryConfig"></Attribute>
+            <InternalElement Name="IE2" ID="008a442a-ce98-4543-b456-7ecff0294398">
+                <Attribute Name="queryConfig"></Attribute>
+                <InternalElement Name="IE3" ID="ce2b12b7-0195-4e2e-81b3-5e6cc0000299">
+                    <Attribute Name="queryConfig"></Attribute>
+                    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+                </InternalElement>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-NestedProjection1-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="e2b5a3ba-70d7-40d0-b033-5bc78c8726a8">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>3d0f2f85-5532-4d5a-b2bb-eb5e26059a47</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE5" ID="b9782d46-52f1-4a06-917b-ae375d4becd5">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>projection</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>008a442a-ce98-4543-b456-7ecff0294398</Value>
+                    </Attribute>
+                </Attribute>
+                <InternalElement Name="IE6" ID="e1fe9a1a-3950-452d-be07-7e8c7ef3e17a">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>ce2b12b7-0195-4e2e-81b3-5e6cc0000299</Value>
+                        </Attribute>
+                    </Attribute>
+                </InternalElement>
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-NestedProjection2-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="a7dccf7d-bbf6-4fce-b106-b6a6242b4600">
+            <Attribute Name="queryConfig"></Attribute>
+            <InternalElement Name="IE2" ID="d05ca158-af78-4737-9cf6-4de451b3a894">
+                <Attribute Name="queryConfig"></Attribute>
+                <InternalElement Name="IE3" ID="22d1b7c5-4c0f-4a7e-bca4-da91ec57bc26">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+                </InternalElement>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-NestedProjection2-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="92061b57-a536-44d8-b039-238a232486d2">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>a7dccf7d-bbf6-4fce-b106-b6a6242b4600</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE5" ID="352f53ae-aaf4-4795-a8f8-93067aab37f2">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>projection</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>d05ca158-af78-4737-9cf6-4de451b3a894</Value>
+                    </Attribute>
+                </Attribute>
+                <InternalElement Name="IE6" ID="9803b633-a813-45c3-a401-d3c554d0e782">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>22d1b7c5-4c0f-4a7e-bca4-da91ec57bc26</Value>
+                        </Attribute>
+                    </Attribute>
+                </InternalElement>
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-NewRole-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="8926052b-82af-452f-b402-7aa605d164e8">
+            <Attribute Name="queryConfig"></Attribute>
+            <InternalElement Name="IE2" ID="520f6e6d-6a2d-4c1c-970d-b16afb8d0a52">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF4-NewRole-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE3" ID="3f420140-9e83-4986-8f4d-914287dbca83">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>8926052b-82af-452f-b402-7aa605d164e8</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE4" ID="d6ef32f2-1004-4543-b7f9-43710505c568">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>520f6e6d-6a2d-4c1c-970d-b16afb8d0a52</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyComplexStructure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Attribute-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="fd9fd4da-0fac-4a40-81c3-17360537ccd1">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Frame">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                        <Value>True</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="x" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="y" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="z" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="rx" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="ry" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="rz" AttributeDataType="xs:double">
+                    <Attribute Name="queryConfig">
+                        <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                            <Value>True</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Attribute-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE2" ID="faefe6b0-31fd-42c8-9ec2-55652ce11f4f">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>fd9fd4da-0fac-4a40-81c3-17360537ccd1</Value>
+                </Attribute>
+            </Attribute>
+            <Attribute Name="Translations">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>projection</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>fd9fd4da-0fac-4a40-81c3-17360537ccd1/Frame</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="tx" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>fd9fd4da-0fac-4a40-81c3-17360537ccd1/Frame/x</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="ty" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>fd9fd4da-0fac-4a40-81c3-17360537ccd1/Frame/y</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="tz" AttributeDataType="xs:double">
+                    <Attribute Name="targetConfig">
+                        <Attribute Name="mode" AttributeDataType="xs:string">
+                            <Value>copy</Value>
+                        </Attribute>
+                        <Attribute Name="sourceID" AttributeDataType="xs:string">
+                            <Value>fd9fd4da-0fac-4a40-81c3-17360537ccd1/Frame/z</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Object-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="1b7e09b6-58a6-4fa5-b880-ee9b4ae629eb">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE2" ID="c77fbf45-e825-439d-8bed-7f6f9539e444">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="a426bbac-74ec-4e6c-a884-89e5a780718f">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Object-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="6f927adf-1f2e-4219-9e3b-fabf1154b2d3">
+            <InternalElement Name="IE6" ID="17e1f509-ab8b-4a8f-a792-c76f5984e93f">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>c77fbf45-e825-439d-8bed-7f6f9539e444</Value>
+                    </Attribute>
+                </Attribute>                
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureX" />
+        </InternalElement>
+        <InternalElement Name="IE5" ID="858f3ed0-3e04-416f-8476-5c4766db8933">
+            <InternalElement Name="IE7" ID="ca3b50cd-1593-4b67-9002-2ec84fb58ca2">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>a426bbac-74ec-4e6c-a884-89e5a780718f</Value>
+                    </Attribute>
+                </Attribute>                
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureY" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Object2-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Object2-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Object3-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF5-Object3-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF6-Aggregation1-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="4d2a71d8-4b68-4d48-a9a6-3a7a033bda5b">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        </InternalElement>
+        <InternalElement Name="IE2" ID="a698c708-0dac-457b-864c-f72ed9f0c949">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF6-Aggregation1-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE3" ID="d891976f-6157-4d3c-9122-20da61ea5d23">
+            <InternalElement Name="IE4" ID="d2e6be6c-d761-41e0-aded-aea0ec635883">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>4d2a71d8-4b68-4d48-a9a6-3a7a033bda5b</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <InternalElement Name="IE5" ID="c071e67a-d9af-4b91-a345-9ebf9055c676">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>a698c708-0dac-457b-864c-f72ed9f0c949</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyAggregator" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF6-Aggregation2-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="a33e7848-b614-4fee-969a-6ec451a747ab">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE2" ID="f5e47db0-79a6-46a4-8c97-40bc3e31c63b">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="45ffc72a-81b4-4131-b5c0-80df7172aa85">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF6-Aggregation2-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="2ef84bca-0c62-4be4-97e9-12adb3c4cdae">
+            <InternalElement Name="IE5" ID="c3e5a38e-abfa-4133-bfd8-6f40e0774082">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>f5e47db0-79a6-46a4-8c97-40bc3e31c63b</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <InternalElement Name="IE6" ID="deed94c5-28ed-429a-8cb3-1b4a3845f4ce">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>45ffc72a-81b4-4131-b5c0-80df7172aa85</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyAggregator" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF8-Flattening1-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="e8166431-76a7-4fa0-839f-ebc7c092db1a">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE2" ID="a2d65557-c415-4033-9c33-d1e4d25da2bd">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="53a071a0-8c0a-491d-b65a-49feceea65fb">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF8-Flattening1-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="0203c0cc-3edd-4716-8ba9-db37ef274730">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>e8166431-76a7-4fa0-839f-ebc7c092db1a</Value>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+        <InternalElement Name="IE5" ID="e049825e-2c39-4529-85fa-3be0485bee95">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>a2d65557-c415-4033-9c33-d1e4d25da2bd</Value>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+        <InternalElement Name="IE6" ID="3364499a-52c0-49c5-b9f5-b2906ee8284f">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>53a071a0-8c0a-491d-b65a-49feceea65fb</Value>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF8-Flattening2-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="f7f716e5-183f-4018-a7ec-6b56dd932d46">
+            <Attribute Name="queryConfig"></Attribute>
+            <InternalElement Name="IE2" ID="ef3a82b4-1a2b-489f-8bde-32f4ecc52706">
+                <Attribute Name="queryConfig">
+                    <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                        <Value>0</Value>
+                    </Attribute>
+                </Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="ac04a969-af56-4e9e-b3ac-f8fe6772630b">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF8-Flattening2-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="531a7301-ee94-4e79-9a8b-45f1618dd6a0">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>projection</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>f7f716e5-183f-4018-a7ec-6b56dd932d46</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE5" ID="59edcce4-2039-4e02-bf86-c2e161a00908">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>ef3a82b4-1a2b-489f-8bde-32f4ecc52706</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+        </InternalElement>
+        <InternalElement Name="IE6" ID="42e5d2bf-b483-467c-97f2-a6fdd648fd7b">
+            <Attribute Name="targetConfig">
+                <Attribute Name="mode" AttributeDataType="xs:string">
+                    <Value>copy</Value>
+                </Attribute>
+                <Attribute Name="sourceID" AttributeDataType="xs:string">
+                    <Value>ac04a969-af56-4e9e-b3ac-f8fe6772630b</Value>
+                </Attribute>
+            </Attribute>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF8-Flattening3-Source">
+        <Version>0</Version>
+        <InternalElement Name="IE1" ID="6c4a6acd-00f7-47fd-8d9c-4d4e84c08a72">
+            <Attribute Name="queryConfig">
+                <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                    <Value>True</Value>
+                </Attribute>
+            </Attribute>
+            <InternalElement Name="IE2" ID="e854ba96-22e1-4f7f-b175-ab4badc8e7ff">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+            </InternalElement>
+            <InternalElement Name="IE3" ID="2a93b807-6182-447b-98b8-41a875ec9481">
+                <Attribute Name="queryConfig"></Attribute>
+                <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="TF8-Flattening3-Target">
+        <Version>0</Version>
+        <InternalElement Name="IE4" ID="9ceb8233-aa27-4c94-98dc-5630e6deb6a6">
+            <InternalElement Name="IE5" ID="3067d070-8414-4188-b3eb-887cf2aa9631">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>projection</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>6c4a6acd-00f7-47fd-8d9c-4d4e84c08a72</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <InternalElement Name="IE6" ID="64a4256f-a8b5-44e5-9323-3c1d760369c0">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>e854ba96-22e1-4f7f-b175-ab4badc8e7ff</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+            <InternalElement Name="IE7" ID="823dd5bd-e848-4590-9e5f-be1be16e60d1">
+                <Attribute Name="targetConfig">
+                    <Attribute Name="mode" AttributeDataType="xs:string">
+                        <Value>copy</Value>
+                    </Attribute>
+                    <Attribute Name="sourceID" AttributeDataType="xs:string">
+                        <Value>2a93b807-6182-447b-98b8-41a875ec9481</Value>
+                    </Attribute>
+                </Attribute>
+            </InternalElement>
+        </InternalElement>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Link1-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Link1-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Link2-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Link2-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Link3-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Link3-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Join1-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Join1-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Join2-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Join2-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Join3-Source">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InstanceHierarchy Name="Join3-Target">
+        <Version>0</Version>
+    </InstanceHierarchy>
+    <InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+        <Description>Standard Automation Markup Language Interface Class Library - Part 1 Content extended with Part 3 and Part 4 Content</Description>
+        <Version>2.2.2</Version>
+        <InterfaceClass Name="AutomationMLBaseInterface">
+            <InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+                <Attribute Name="Direction" AttributeDataType="xs:string" />
+            </InterfaceClass>
+            <InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+            <InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+            <InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+            <InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+                <Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+                <InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector">
+                    <Attribute Name="refType" AttributeDataType="xs:string" />
+                    <Attribute Name="target" AttributeDataType="xs:token" />
+                </InterfaceClass>
+                <InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector">
+                    <InterfaceClass Name="LogicInterface" RefBaseClassPath="PLCopenXMLInterface">
+                        <InterfaceClass Name="SequencingLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+                        <InterfaceClass Name="BehaviourLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+                        <InterfaceClass Name="SequencingBehaviourLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+                        <InterfaceClass Name="InterlockingLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" /></InterfaceClass>
+                    <InterfaceClass Name="LogicElementInterface" RefBaseClassPath="PLCopenXMLInterface" />
+                    <InterfaceClass Name="VariableInterface" RefBaseClassPath="PLCopenXMLInterface">
+                        <InterfaceClass Name="InterlockingVariableInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+                            <Attribute Name="SafeConditionEquals" AttributeDataType="xs:boolean">
+                                <DefaultValue>True</DefaultValue>
+                            </Attribute>
+                        </InterfaceClass>
+                    </InterfaceClass>
+                </InterfaceClass>
+            </InterfaceClass>
+            <InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+                <InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" /></InterfaceClass>
+            <InterfaceClass Name="AttachmentInterface" RefBaseClassPath="AutomationMLBaseInterface" /></InterfaceClass>
+    </InterfaceClassLib>
+    <InterfaceClassLib Name="CommunicationInterfaceClassLib">
+        <InterfaceClass Name="PhysicalEndPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" />
+        <InterfaceClass Name="LogicalEndPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" />
+    </InterfaceClassLib>
+    <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+        <Description>Automation Markup Language Base Role class Library - Part 1 Content extended with Part 3 Content</Description>
+        <Version>2.2.1</Version>
+        <RoleClass Name="AutomationMLBaseRole">
+            <RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+                <Attribute Name="AssociatedFacet" AttributeDataType="xs:string" />
+            </RoleClass>
+            <RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+            <RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+                <Attribute Name="Direction" AttributeDataType="xs:string" />
+                <Attribute Name="Cardinality">
+                    <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+                    <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" /></Attribute>
+                <Attribute Name="Category" AttributeDataType="xs:string" />
+                <ExternalInterface Name="ConnectionPoint" ID="9942BD9C-C19D-44E4-A197-11B9EDF264E7" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" />
+            </RoleClass>
+            <RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+            <RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+            <RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+            <RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+                <RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+                <RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+                <RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" /></RoleClass>
+            <RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole" />
+            <RoleClass Name="Frame" RefBaseClassPath="AutomationMLBaseRole" /></RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLDMIRoleClassLib">
+        <Description>Automation Markup Language  Discrete Manufacturing Industry Role Class Library</Description>
+        <Version>2.4.0</Version>
+        <RoleClass Name="DiscManufacturingEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+            <RoleClass Name="Transport" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Storage" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Fixture" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Gate" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Robot" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Tool" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Carrier" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="Machine" RefBaseClassPath="DiscManufacturingEquipment" />
+            <RoleClass Name="StaticObject" RefBaseClassPath="DiscManufacturingEquipment" /></RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLCSRoleClassLib">
+        <Description>Automation Markup Language Control Industry Role Class Library</Description>
+        <Version>2.3.0</Version>
+        <RoleClass Name="ControlEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+            <RoleClass Name="Communication" RefBaseClassPath="ControlEquipment" />
+            <RoleClass Name="ControlHardware" RefBaseClassPath="ControlEquipment">
+                <RoleClass Name="PC" RefBaseClassPath="ControlHardware" />
+                <RoleClass Name="IPC" RefBaseClassPath="ControlHardware" />
+                <RoleClass Name="EmbeddedDevice" RefBaseClassPath="ControlHardware" />
+                <RoleClass Name="Handheld" RefBaseClassPath="ControlHardware" /></RoleClass>
+            <RoleClass Name="Sensor" RefBaseClassPath="ControlEquipment" />
+            <RoleClass Name="Actuator" RefBaseClassPath="ControlEquipment" />
+            <RoleClass Name="Controller" RefBaseClassPath="ControlEquipment">
+                <RoleClass Name="PLC" RefBaseClassPath="Controller" />
+                <RoleClass Name="NC" RefBaseClassPath="Controller" />
+                <RoleClass Name="RC" RefBaseClassPath="Controller" />
+                <RoleClass Name="PAC" RefBaseClassPath="Controller" /></RoleClass>
+        </RoleClass>
+    </RoleClassLib>
+    <RoleClassLib Name="AutomationMLExtendedRoleClassLib">
+        <Version>2.7.0</Version>
+        <RoleClass Name="PLCFacet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" />
+        <RoleClass Name="HMIFacet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" />
+        <RoleClass Name="Enterprise" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="Site" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="Area" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="ProductionLine" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="WorkCell" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="ProcessCell" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="Unit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="ProductionUnit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="StorageZone" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="StorageUnit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+        <RoleClass Name="Turntable" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="Conveyor" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport">
+            <RoleClass Name="BeltConveyor" RefBaseClassPath="Conveyor" />
+            <RoleClass Name="RollConveyor" RefBaseClassPath="Conveyor" />
+            <RoleClass Name="ChainConveyor" RefBaseClassPath="Conveyor" />
+            <RoleClass Name="PalletConveyor" RefBaseClassPath="Conveyor" />
+            <RoleClass Name="OverheadConveyor" RefBaseClassPath="Conveyor" /></RoleClass>
+        <RoleClass Name="LiftingTable" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="AGV" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="Transposer" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="CarrierHandlingSystem" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="BodyStore" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+        <RoleClass Name="Lift" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="Rollerbed" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+        <RoleClass Name="StationaryTool" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" />
+        <RoleClass Name="MovableTool" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" />
+        <RoleClass Name="ControlCabinet" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+        <RoleClass Name="IODevice" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+        <RoleClass Name="HMI" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment">
+            <RoleClass Name="WarningEquipment" RefBaseClassPath="AutomationMLExtendedRoleClassLib/HMI" /></RoleClass>
+        <RoleClass Name="ActuatingDrive" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Actuator" />
+        <RoleClass Name="MotionController" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+        <RoleClass Name="Panel" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/ControlHardware" />
+        <RoleClass Name="MeasuringEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+        <RoleClass Name="Clamp" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Fixture" />
+        <RoleClass Name="ProcessController" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Controller" />
+        <RoleClass Name="Loader" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+        <RoleClass Name="Unloader" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+    </RoleClassLib>
+    <RoleClassLib Name="CommunicationRoleClassLib">
+        <RoleClass Name="PhysicalDevice" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+            <RoleClass Name="PhysicalPortList" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" /></RoleClass>
+        <RoleClass Name="PhysicalConnection" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+        <RoleClass Name="PhysicalNetwork" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+        <RoleClass Name="LogicalDevice" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+            <RoleClass Name="LogicalPortList" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" /></RoleClass>
+        <RoleClass Name="LogicalConnection" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+        <RoleClass Name="LogicalNetwork" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+    </RoleClassLib>
+    <RoleClassLib Name="TargetRoleClassLib">
+        <Version>0</Version>
+        <RoleClass Name="MyStructure" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+        <RoleClass Name="MyRobotX" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        <RoleClass Name="MyRobotY" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+        <RoleClass Name="MyResource" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+        <RoleClass Name="MyComplexStructure" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+        <RoleClass Name="MyStructureX" RefBaseClassPath="TargetRoleClassLib/MyStructure" />
+        <RoleClass Name="MyStructureY" RefBaseClassPath="TargetRoleClassLib/MyStructure" />
+        <RoleClass Name="MyAggregator" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+    </RoleClassLib>
+</CAEXFile>

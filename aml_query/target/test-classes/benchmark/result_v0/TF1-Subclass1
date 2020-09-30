@@ -1,0 +1,25 @@
+declare namespace uuid = 'java.util.UUID';
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "src/main/resources/caex.xqy";
+let $root := doc("src/test/resources/data.aml")/CAEXFile
+return
+(
+	<InstanceHierarchy Name="RobotCell">
+	{
+		for $n1 in $root/InstanceHierarchy[descendant-or-self::InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"] and Attribute[@Name="Frame" and Attribute[@Name="y" and Value<=5]]]]/descendant-or-self::InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"] and Attribute[@Name="Frame" and Attribute[@Name="y" and Value<=5]]]
+		return
+		(
+			element{node-name($n1)}
+			{
+				$n1/@*,
+				for $n2 in $n1/node()
+				return
+				(
+					caex215:copy($n2)
+				)
+				,
+				<RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRobotX"/>
+			}
+		)
+	}
+	</InstanceHierarchy>
+)

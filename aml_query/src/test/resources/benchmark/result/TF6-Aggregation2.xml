@@ -1,0 +1,149 @@
+<InstanceHierarchy Name="RobotCell">
+  <InternalElement Name="IE" ID="7ee2f2ae-830b-4033-8f6e-be471f78be00">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B81A00003240" Name="3">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-7.4</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B84F00003262" Name="4">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-4.558491</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.882722</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyAggregator"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="332faf05-021a-411a-9058-78e077165b62">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A2" Name="7">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-9.3</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>2.8</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B8F4000032C3" Name="8">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-3.128421</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>0.936761</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyAggregator"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="d9d91b40-902e-4859-a5e7-5df42bf71b48">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DB" Name="11">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-9.7</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>4.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B99B000032FC" Name="12">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-4.555277</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.060808</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyAggregator"/>
+  </InternalElement>
+</InstanceHierarchy>

@@ -1,0 +1,127 @@
+Trying to load package for model CAEX215
+Loading class CAEX215.CAEX215Package...
+
+------Q1-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/InternalElement[RoleRequirements[caex215:requiresRR("Structure","AutomationMLBaseRoleClassLib", .)]]/@ID
+
+RESULTS:1
+ID="1"
+
+------Q2-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/descendant-or-self::InternalElement[RoleRequirements[caex215:requiresRR("Structure","AutomationMLBaseRoleClassLib", .)]]/@ID
+
+RESULTS:7
+ID="1"
+ID="2"
+ID="5"
+ID="6"
+ID="9"
+ID="10"
+ID="16"
+
+------Q3-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+declare function local:pattern0($node as node()) as xs:boolean {
+	 if($node[self::InternalElement[RoleRequirements[caex215:requiresRR("Structure","AutomationMLBaseRoleClassLib", .)]]])
+	 then fn:true()
+	 else fn:false()
+};
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/*/caex215:getClosure(., local:pattern0(?))/@ID
+
+RESULTS:6
+ID="1"
+ID="2"
+ID="5"
+ID="6"
+ID="9"
+ID="10"
+
+------Q4-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/descendant-or-self::InternalElement[RoleRequirements[caex215:requiresRR("Resource","AutomationMLBaseRoleClassLib", .)]]/ExternalInterface[caex215:refsIC("COLLADAInterface","AutomationMLInterfaceClassLib", .)]/@ID
+
+RESULTS:1
+ID="14"
+
+------Q5-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/descendant-or-self::InternalElement[RoleRequirements[caex215:requiresRR("Resource","AutomationMLBaseRoleClassLib", .)] and Attribute[@Name="Frame" and Attribute[@Name="x" and Value>-5]]]/@ID
+
+RESULTS:3
+ID="4"
+ID="8"
+ID="12"
+
+------Q6-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/descendant-or-self::InternalElement[count(InternalElement[RoleRequirements[caex215:requiresRR("Resource","AutomationMLBaseRoleClassLib", .)]])>=1 and count(InternalElement[RoleRequirements[caex215:requiresRR("Resource","AutomationMLBaseRoleClassLib", .)]])<=2]/@ID
+
+RESULTS:4
+ID="1"
+ID="2"
+ID="6"
+ID="10"
+
+------Q7-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/descendant-or-self::InternalElement[InternalElement and not(InternalElement[RoleRequirements[caex215:requiresRR("Robot","AutomationMLDMIRoleClassLib", .)]])]/@ID
+
+RESULTS:2
+ID="1"
+ID="13"
+
+------Q8-------
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/caex.xqy";
+
+let $n0 := doc("/Users/aris/Documents/repositories/ipr/aml_tools/resources/xquery/data.aml")/CAEXFile/InstanceHierarchy/descendant-or-self::InternalElement[RoleRequirements[caex215:requiresRR("Structure","AutomationMLBaseRoleClassLib", .)] and InternalElement[RoleRequirements[caex215:requiresRR("Robot","AutomationMLDMIRoleClassLib", .)]]]
+return (
+	<r0-0>
+	{for $n1 in $n0
+	  return (
+		<n1-0>
+		{
+		  $n1/@ID
+		}
+		</n1-0>,
+		<n1-1>
+		{
+		  for $n2 in $n1/InternalElement[RoleRequirements[caex215:requiresRR("Robot","AutomationMLDMIRoleClassLib", .)]]
+		  return (
+			<n2-0>
+			{
+			  $n2/@ID
+			}
+			</n2-0>
+		  )
+		}
+		</n1-1>
+	  )}
+	</r0-0>
+)
+
+
+RESULTS:1
+<r0-0>
+  <n1-0 ID="2"/>
+  <n1-1>
+    <n2-0 ID="3"/>
+  </n1-1>
+  <n1-0 ID="6"/>
+  <n1-1>
+    <n2-0 ID="7"/>
+  </n1-1>
+  <n1-0 ID="10"/>
+  <n1-1>
+    <n2-0 ID="11"/>
+  </n1-1>
+</r0-0>

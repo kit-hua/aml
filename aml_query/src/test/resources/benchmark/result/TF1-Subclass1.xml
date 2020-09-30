@@ -1,0 +1,50 @@
+<InstanceHierarchy Name="RobotCell">
+  <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A2" Name="7">
+    <Attribute Name="Frame">
+      <Attribute Name="x">
+        <Value>-9.3</Value>
+      </Attribute>
+      <Attribute Name="y">
+        <Value>2.8</Value>
+      </Attribute>
+      <Attribute Name="z">
+        <Value>1</Value>
+      </Attribute>
+      <Attribute Name="rx">
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="ry">
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="rz">
+        <Value>0</Value>
+      </Attribute>
+    </Attribute>
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRobotX"/>
+  </InternalElement>
+  <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DB" Name="11">
+    <Attribute Name="Frame">
+      <Attribute Name="x">
+        <Value>-9.7</Value>
+      </Attribute>
+      <Attribute Name="y">
+        <Value>4.6</Value>
+      </Attribute>
+      <Attribute Name="z">
+        <Value>1</Value>
+      </Attribute>
+      <Attribute Name="rx">
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="ry">
+        <Value>0</Value>
+      </Attribute>
+      <Attribute Name="rz">
+        <Value>90</Value>
+      </Attribute>
+    </Attribute>
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRobotX"/>
+  </InternalElement>
+</InstanceHierarchy>

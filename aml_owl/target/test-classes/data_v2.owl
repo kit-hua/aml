@@ -1,0 +1,1427 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.ipr.kit.edu/aml_importer#"
+     xml:base="http://www.ipr.kit.edu/aml_importer"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:aml_importer="http://www.ipr.kit.edu/aml_importer#"
+     xmlns:aml_ontology="http://www.ipr.kit.edu/aml_ontology#">
+    <owl:Ontology rdf:about="http://www.ipr.kit.edu/aml_importer#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#R_Structure -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#R_Structure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#hasEI+ -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#hasEI+">
+        <owl:inverseOf rdf:resource="http://www.ipr.kit.edu/aml_importer#isEIOf+"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#hasIE+"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_ontology#hasEI"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#hasIEStructure+ -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#hasIEStructure+">
+        <owl:inverseOf rdf:resource="http://www.ipr.kit.edu/aml_importer#isIEStructureOf+"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#R_Structure"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_ontology#hasIE"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#R_Structure"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#hasIE+ -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#hasIE+">
+        <owl:inverseOf rdf:resource="http://www.ipr.kit.edu/aml_importer#isIEOf+"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#isEIOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#isEIOf">
+        <owl:inverseOf rdf:resource="http://www.ipr.kit.edu/aml_ontology#hasEI"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#isEIOf+ -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#isEIOf+">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#isIEOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#isIEOf">
+        <owl:inverseOf rdf:resource="http://www.ipr.kit.edu/aml_ontology#hasIE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#isIEOf+ -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#isIEOf+">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#isIEStructureOf+ -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_importer#isIEStructureOf+"/>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_ontology#hasEI -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_ontology#hasEI">
+        <rdfs:subPropertyOf rdf:resource="http://www.ipr.kit.edu/aml_importer#hasEI+"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_ontology#hasIE -->
+
+    <owl:ObjectProperty rdf:about="http://www.ipr.kit.edu/aml_ontology#hasIE">
+        <rdfs:subPropertyOf rdf:resource="http://www.ipr.kit.edu/aml_importer#hasIE+"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_Frame_rx -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_Frame_rx">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_Frame_ry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_Frame_ry">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_Frame_rz -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_Frame_rz">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_Frame_x -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_Frame_x">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_Frame_y -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_Frame_y">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_Frame_z -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_Frame_z">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_refType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_refType">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#has_refURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ipr.kit.edu/aml_importer#has_refURI">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#AGV -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#AGV">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ActuatingDrive -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ActuatingDrive">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Actuator"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Actuator -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Actuator">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Area -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Area">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#AttachmentInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#AttachmentInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface">
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole">
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#BehaviourLogicInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#BehaviourLogicInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#LogicInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#BeltConveyor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#BeltConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Conveyor"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#BodyStore -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#BodyStore">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Storage"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#COLLADAInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#COLLADAInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ExternalDataConnector"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Carrier -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Carrier">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#CarrierHandlingSystem -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#CarrierHandlingSystem">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ChainConveyor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ChainConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Conveyor"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Clamp -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Clamp">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Fixture"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Communication -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ControlCabinet -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ControlCabinet">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ControlEquipment -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ControlEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ControlHardware -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ControlHardware">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Controller -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Controller">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Conveyor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Conveyor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#EmbeddedDevice -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#EmbeddedDevice">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlHardware"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Enterprise -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Enterprise">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ExternalDataConnector -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ExternalDataConnector">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Facet -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Facet">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Fixture -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Fixture">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Frame -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Frame">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Gate -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Gate">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Group -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Group">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#HMI -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#HMI">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#HMIFacet -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#HMIFacet">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Facet"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Handheld -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Handheld">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlHardware"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#IODevice -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#IODevice">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#IPC -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#IPC">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlHardware"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#InterlockingConnector -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#InterlockingConnector">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#InterlockingLogicInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#InterlockingLogicInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#LogicInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#InterlockingVariableInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#InterlockingVariableInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#VariableInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Lift -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Lift">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LiftingTable -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LiftingTable">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Loader -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Loader">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Storage"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicElementInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicElementInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#PLCopenXMLInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#PLCopenXMLInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicalConnection -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicalConnection">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicalDevice -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicalDevice">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicalEndPoint -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicalEndPoint">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Communication"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicalNetwork -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicalNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#LogicalPortList -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#LogicalPortList">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Machine -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Machine">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#MeasuringEquipment -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#MeasuringEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#MotionController -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#MotionController">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#MovableTool -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#MovableTool">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Tool"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#NC -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#NC">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Controller"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Order -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Order">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#OverheadConveyor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#OverheadConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Conveyor"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PAC -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PAC">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Controller"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PC -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PC">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlHardware"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PLC -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PLC">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Controller"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PLCFacet -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PLCFacet">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Facet"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PLCopenXMLInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PLCopenXMLInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ExternalDataConnector"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PPRConnector -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PPRConnector">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PalletConveyor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PalletConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Conveyor"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Panel -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Panel">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlHardware"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PhysicalConnection -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PhysicalConnection">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PhysicalDevice -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PhysicalDevice">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PhysicalEndPoint -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PhysicalEndPoint">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Communication"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PhysicalNetwork -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PhysicalNetwork">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Resource"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PhysicalPortList -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PhysicalPortList">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Port -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Port">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PortConnector -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PortConnector">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Process -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Process">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ProcessCell -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ProcessCell">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ProcessController -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ProcessController">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Controller"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ProcessStructure -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ProcessStructure">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Product -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Product">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ProductStructure -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ProductStructure">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ProductionLine -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ProductionLine">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ProductionUnit -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ProductionUnit">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#PropertySet -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#PropertySet">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#RC -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#RC">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Controller"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Resource -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ResourceStructure -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#ResourceStructure">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Robot -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Robot">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#RollConveyor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#RollConveyor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Conveyor"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Rollerbed -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Rollerbed">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Sensor -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ControlEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#SequencingBehaviourLogicInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#SequencingBehaviourLogicInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#LogicInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#SequencingLogicInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#SequencingLogicInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#LogicInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#SignalInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#SignalInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Communication"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Site -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Site">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#StaticObject -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#StaticObject">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#StationaryTool -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#StationaryTool">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Tool"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Storage -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Storage">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#StorageUnit -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#StorageUnit">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#StorageZone -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#StorageZone">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Structure -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Structure">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.ipr.kit.edu/aml_importer#R_Structure"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#AutomationMLBaseRole"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Tool -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Tool">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Transport -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#DiscManufacturingEquipment"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Transposer -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Transposer">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Turntable -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Turntable">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Transport"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Unit -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Unit">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#Unloader -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#Unloader">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#Storage"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#VariableInterface -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#VariableInterface">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#PLCopenXMLInterface"/>
+        <rdfs:comment>InterfaceClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#WarningEquipment -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#WarningEquipment">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#HMI"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#WorkCell -->
+
+    <owl:Class rdf:about="http://www.ipr.kit.edu/aml_importer#WorkCell">
+        <rdfs:subClassOf rdf:resource="http://www.ipr.kit.edu/aml_importer#ResourceStructure"/>
+        <rdfs:comment>RoleClass</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ei_14_32D1045E-5069-45BB-9DFB-DDA17BC7F27B -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ei_14_32D1045E-5069-45BB-9DFB-DDA17BC7F27B">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#COLLADAInterface"/>
+        <has_refType rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">explicit</has_refType>
+        <has_refURI>./dae_lib/F19721000063102000100_001_zb_hb_vorrichtung001_layout_kin_Product.dae</has_refURI>
+        <rdfs:comment>ExternalInterface</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_10_AF138E59-0000-17AC-556E-B961000032DA -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_10_AF138E59-0000-17AC-556E-B961000032DA">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_11_AF138E59-0000-17AC-556E-B961000032DB"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_12_AF138E59-0000-17AC-556E-B99B000032FC"/>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_11_AF138E59-0000-17AC-556E-B961000032DB -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_11_AF138E59-0000-17AC-556E-B961000032DB">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Robot"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">90</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-9.7</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4.6</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_12_AF138E59-0000-17AC-556E-B99B000032FC -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_12_AF138E59-0000-17AC-556E-B99B000032FC">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Clamp"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">90</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-4.555277</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">7.060808</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_13_AF138E59-0000-17AC-556E-BC030000331D -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_13_AF138E59-0000-17AC-556E-BC030000331D">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Clamp"/>
+        <aml_ontology:hasEI rdf:resource="http://www.ipr.kit.edu/aml_importer#ei_14_32D1045E-5069-45BB-9DFB-DDA17BC7F27B"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_15_AF138E59-0000-17AC-556E-BC4600003328"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_16_AF138E59-0000-17AC-556E-BC460000332D"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-180</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-7.5</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4.87</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_15_AF138E59-0000-17AC-556E-BC4600003328 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_15_AF138E59-0000-17AC-556E-BC4600003328">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Frame"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-1.365</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-1.795</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_16_AF138E59-0000-17AC-556E-BC460000332D -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_16_AF138E59-0000-17AC-556E-BC460000332D">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_1_AF138E59-0000-17AC-556E-B81A0000323E -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_1_AF138E59-0000-17AC-556E-B81A0000323E">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_10_AF138E59-0000-17AC-556E-B961000032DA"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_13_AF138E59-0000-17AC-556E-BC030000331D"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_2_AF138E59-0000-17AC-556E-B81A0000323F"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_6_AF138E59-0000-17AC-556E-B8BD000032A1"/>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_2_AF138E59-0000-17AC-556E-B81A0000323F -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_2_AF138E59-0000-17AC-556E-B81A0000323F">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_3_AF138E59-0000-17AC-556E-B81A00003240"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_4_AF138E59-0000-17AC-556E-B84F00003262"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_5_AF138E59-0000-17AC-556E-B85100003266"/>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_3_AF138E59-0000-17AC-556E-B81A00003240 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_3_AF138E59-0000-17AC-556E-B81A00003240">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Robot"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-7.4</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">7.6</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_4_AF138E59-0000-17AC-556E-B84F00003262 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_4_AF138E59-0000-17AC-556E-B84F00003262">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Clamp"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">90</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-4.558491</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">7.882722</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_5_AF138E59-0000-17AC-556E-B85100003266 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_5_AF138E59-0000-17AC-556E-B85100003266">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">4.499</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">90</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-7.366172</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">6.379493</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2.394861</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_6_AF138E59-0000-17AC-556E-B8BD000032A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_6_AF138E59-0000-17AC-556E-B8BD000032A1">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_7_AF138E59-0000-17AC-556E-B8BD000032A2"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_8_AF138E59-0000-17AC-556E-B8F4000032C3"/>
+        <aml_ontology:hasIE rdf:resource="http://www.ipr.kit.edu/aml_importer#ie_9_AF138E59-0000-17AC-556E-B8F6000032C7"/>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_7_AF138E59-0000-17AC-556E-B8BD000032A2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_7_AF138E59-0000-17AC-556E-B8BD000032A2">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Robot"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-9.3</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2.8</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">1</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_8_AF138E59-0000-17AC-556E-B8F4000032C3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_8_AF138E59-0000-17AC-556E-B8F4000032C3">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Clamp"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-3.128421</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0.936761</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">0</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ipr.kit.edu/aml_importer#ie_9_AF138E59-0000-17AC-556E-B8F6000032C7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.ipr.kit.edu/aml_importer#ie_9_AF138E59-0000-17AC-556E-B8F6000032C7">
+        <rdf:type rdf:resource="http://www.ipr.kit.edu/aml_importer#Structure"/>
+        <has_Frame_rx rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">73.172</has_Frame_rx>
+        <has_Frame_ry rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">34.473</has_Frame_ry>
+        <has_Frame_rz rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">97.709</has_Frame_rz>
+        <has_Frame_x rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">-7.491077</has_Frame_x>
+        <has_Frame_y rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">3.60465</has_Frame_y>
+        <has_Frame_z rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2.650281</has_Frame_z>
+        <rdfs:comment>InternalElement</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ei_14_32D1045E-5069-45BB-9DFB-DDA17BC7F27B"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_10_AF138E59-0000-17AC-556E-B961000032DA"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_11_AF138E59-0000-17AC-556E-B961000032DB"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_12_AF138E59-0000-17AC-556E-B99B000032FC"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_13_AF138E59-0000-17AC-556E-BC030000331D"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_15_AF138E59-0000-17AC-556E-BC4600003328"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_16_AF138E59-0000-17AC-556E-BC460000332D"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_1_AF138E59-0000-17AC-556E-B81A0000323E"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_2_AF138E59-0000-17AC-556E-B81A0000323F"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_3_AF138E59-0000-17AC-556E-B81A00003240"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_4_AF138E59-0000-17AC-556E-B84F00003262"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_5_AF138E59-0000-17AC-556E-B85100003266"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_6_AF138E59-0000-17AC-556E-B8BD000032A1"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_7_AF138E59-0000-17AC-556E-B8BD000032A2"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_8_AF138E59-0000-17AC-556E-B8F4000032C3"/>
+            <rdf:Description rdf:about="http://www.ipr.kit.edu/aml_importer#ie_9_AF138E59-0000-17AC-556E-B8F6000032C7"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

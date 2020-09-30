@@ -1,0 +1,181 @@
+<InstanceHierarchy Name="RobotCell">
+  <InternalElement Name="IE" ID="d96e202e-c112-4b8b-9111-7a282f01cdab">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B81A00003240" Name="3">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-7.4</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B81A00003240" Name="3-1">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-7.4</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureX"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="b0f54eca-ab75-4735-a2bb-0c8f3508205c">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B84F00003262" Name="4">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-4.558491</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.882722</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureY"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="6c6d3db3-7de4-41da-932a-bfe0067f921f">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A2" Name="7">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-9.3</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>2.8</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureX"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="a4cb058c-a370-4785-b952-912f4ee44393">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B8F4000032C3" Name="8">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-3.128421</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>0.936761</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureY"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="ba3fd2dc-cdd0-44df-bca7-822165e4c551">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DB" Name="11">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-9.7</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>4.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureX"/>
+  </InternalElement>
+  <InternalElement Name="IE" ID="6c8ed7e3-755d-47c1-ae19-12aab51d7cd0">
+    <InternalElement ID="AF138E59-0000-17AC-556E-B99B000032FC" Name="12">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-4.555277</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.060808</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"/>
+    </InternalElement>
+    <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureY"/>
+  </InternalElement>
+</InstanceHierarchy>

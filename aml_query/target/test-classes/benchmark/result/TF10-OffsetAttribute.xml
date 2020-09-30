@@ -1,0 +1,83 @@
+<InstanceHierarchy Name="RobotCell">
+  <InternalElement ID="AF138E59-0000-17AC-556E-B81A00003240" Name="3">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    <InternalElement Name="IE" ID="39e2e985-863b-4ed8-957b-07509ccefd8f">
+      <Attribute Name="tx">
+        <Value>-7.4</Value>
+      </Attribute>
+      <Attribute Name="ty">
+        <Value>7.6</Value>
+      </Attribute>
+      <Attribute Name="tz">
+        <Value>1</Value>
+      </Attribute>
+      <InternalElement Name="IE" ID="fd93d511-ef5a-4f9f-aa80-c565634fda3c">
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRotation"/>
+      </InternalElement>
+      <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyTranslation"/>
+    </InternalElement>
+  </InternalElement>
+  <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A2" Name="7">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    <InternalElement Name="IE" ID="60cd77cc-6973-49e1-932b-511d49a6d52a">
+      <Attribute Name="tx">
+        <Value>-9.3</Value>
+      </Attribute>
+      <Attribute Name="ty">
+        <Value>2.8</Value>
+      </Attribute>
+      <Attribute Name="tz">
+        <Value>1</Value>
+      </Attribute>
+      <InternalElement Name="IE" ID="556a0242-7297-46c7-96cd-988d6e794d4b">
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRotation"/>
+      </InternalElement>
+      <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyTranslation"/>
+    </InternalElement>
+  </InternalElement>
+  <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DB" Name="11">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    <InternalElement Name="IE" ID="246a606e-af4c-4f77-b9e4-0a71e5048dc3">
+      <Attribute Name="tx">
+        <Value>-9.7</Value>
+      </Attribute>
+      <Attribute Name="ty">
+        <Value>4.6</Value>
+      </Attribute>
+      <Attribute Name="tz">
+        <Value>1</Value>
+      </Attribute>
+      <InternalElement Name="IE" ID="b78d2a86-6933-4b2a-8fc1-f0bae7a6e204">
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+        <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyRotation"/>
+      </InternalElement>
+      <RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyTranslation"/>
+    </InternalElement>
+  </InternalElement>
+</InstanceHierarchy>

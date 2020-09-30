@@ -1,0 +1,42 @@
+declare namespace uuid = 'java.util.UUID';
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "src/main/resources/caex.xqy";
+let $root := doc("src/test/resources/data_TF5-object.aml")/CAEXFile/InstanceHierarchy[@Name="RobotCell"]
+return
+(
+	<InstanceHierarchy Name="RobotCell">
+	{
+		for $n1 in $root/descendant-or-self::InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"] and InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"]] and InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"]]]
+		return
+		(
+			<InternalElement Name="IE" ID="{uuid:randomUUID()}">
+			{
+				for $n1 in $n1
+				return
+				(
+					for $n2 in $n1/InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"]]
+					return
+					(
+						caex215:copy($n2)
+					)
+				),
+				<RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureX"/>
+			}
+			</InternalElement>,
+			<InternalElement Name="IE" ID="{uuid:randomUUID()}">
+			{
+				for $n1 in $n1
+				return
+				(
+					for $n2 in $n1/InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp"]]
+					return
+					(
+						caex215:copy($n2)
+					)
+				),
+				<RoleRequirements RefBaseRoleClassPath="TargetRoleClassLib/MyStructureY"/>
+			}
+			</InternalElement>
+		)
+	}
+	</InstanceHierarchy>
+)

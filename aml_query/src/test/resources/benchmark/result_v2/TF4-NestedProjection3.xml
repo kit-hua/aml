@@ -1,0 +1,83 @@
+<InstanceHierarchy Name="RobotCell">
+  <InternalElement ID="AF138E59-0000-17AC-556E-B81A0000323E" Name="1">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B81A00003240" Name="3">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-7.4</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>7.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A2" Name="7">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-9.3</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>2.8</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>0</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+    <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DB" Name="11">
+      <Attribute Name="Frame">
+        <Attribute Name="x">
+          <Value>-9.7</Value>
+        </Attribute>
+        <Attribute Name="y">
+          <Value>4.6</Value>
+        </Attribute>
+        <Attribute Name="z">
+          <Value>1</Value>
+        </Attribute>
+        <Attribute Name="rx">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="ry">
+          <Value>0</Value>
+        </Attribute>
+        <Attribute Name="rz">
+          <Value>90</Value>
+        </Attribute>
+      </Attribute>
+      <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"/>
+    </InternalElement>
+  </InternalElement>
+  <InternalElement ID="AF138E59-0000-17AC-556E-B81A0000323F" Name="2">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+  </InternalElement>
+  <InternalElement ID="AF138E59-0000-17AC-556E-B8BD000032A1" Name="6">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+  </InternalElement>
+  <InternalElement ID="AF138E59-0000-17AC-556E-B961000032DA" Name="10">
+    <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure"/>
+  </InternalElement>
+</InstanceHierarchy>

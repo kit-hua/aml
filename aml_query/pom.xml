@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>AutomationML</groupId>
+  <artifactId>aml_query</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>by-example aml query</name>
+  <description>An implementation of by-example AML query based on XPath and XQuery</description>
+  
+  <properties>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+  </properties>
+  
+  <repositories>
+	  <repository>
+	    <id>basex</id>
+	    <name>BaseX Maven Repository</name>
+	    <url>http://files.basex.org/maven</url>
+	  </repository>
+	</repositories>
+  
+  <dependencies>
+  
+  	<dependency>
+		  <groupId>org.basex</groupId>
+		  <artifactId>basex</artifactId>
+		  <version>9.1</version>
+	</dependency>
+	
+    <dependency>
+      	<groupId>AutomationML</groupId>
+      	<artifactId>aml_models</artifactId>
+     	<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
+    	
+    	<dependency>
+      	<groupId>AutomationML</groupId>
+      	<artifactId>aml_io</artifactId>
+     	<version>0.0.1-SNAPSHOT</version>
+    	</dependency>
+    	
+    	<!-- https://mvnrepository.com/artifact/org.xmlunit/xmlunit-core -->
+	<dependency>
+	    <groupId>org.xmlunit</groupId>
+	    <artifactId>xmlunit-core</artifactId>
+	    <version>2.6.3</version>
+	    <scope>test</scope>
+	</dependency>
+	    	
+    	
+  </dependencies>
+</project>

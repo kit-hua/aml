@@ -1,0 +1,97 @@
+declare namespace uuid = 'java.util.UUID';
+import module namespace caex215 = "http://ipr.kit.edu/caex" at "src/main/resources/caex.xqy";
+let $root := doc("src/test/resources/data_exchange.aml")/CAEXFile/InstanceHierarchy[@Name="RobotCell"]
+return
+(
+	<InstanceHierarchy Name="RobotCell">
+	{
+		for $n1 in $root/descendant-or-self::InternalElement[RoleRequirements[@RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot"] and Attribute[@Name="Frame" and Attribute[@Name="x"] and Attribute[@Name="y"] and Attribute[@Name="z"] and Attribute[@Name="rx"] and Attribute[@Name="ry"] and Attribute[@Name="rz"]]]
+		return
+		(
+			element{node-name($n1)}
+			{
+				$n1/@*,
+				for $n2 in $n1/node()
+				return
+				(
+					if (caex215:isProjectDefault($n2))
+					then
+					(
+						caex215:copy($n2)
+					)
+					else
+					(
+						if ($n2[self::Attribute[@Name="Frame" and Attribute[@Name="x"] and Attribute[@Name="y"] and Attribute[@Name="z"] and Attribute[@Name="rx"] and Attribute[@Name="ry"] and Attribute[@Name="rz"]]])
+						then
+						(
+							element{node-name($n2)}
+							{
+								$n2/@*[not(name(.)="Name")],
+								attribute{"Name"}{"Translations"},
+								for $n3 in $n2/node()
+								return
+								(
+									if ($n3[self::Attribute[@Name="x"]])
+									then
+									(
+										element{node-name($n3)}
+										{
+											$n3/@*[not(name(.)="Name")],
+											attribute{"Name"}{"tx"},
+											for $n5 in $n3/node()
+											return
+											(
+												caex215:copy($n5)
+											)
+										}
+									)
+									else
+									(
+										if ($n3[self::Attribute[@Name="y"]])
+										then
+										(
+											element{node-name($n3)}
+											{
+												$n3/@*[not(name(.)="Name")],
+												attribute{"Name"}{"ty"},
+												for $n7 in $n3/node()
+												return
+												(
+													caex215:copy($n7)
+												)
+											}
+										)
+										else
+										(
+											if ($n3[self::Attribute[@Name="z"]])
+											then
+											(
+												element{node-name($n3)}
+												{
+													$n3/@*[not(name(.)="Name")],
+													attribute{"Name"}{"tz"},
+													for $n9 in $n3/node()
+													return
+													(
+														caex215:copy($n9)
+													)
+												}
+											)
+											else
+											(
+											)
+										)
+									)
+								)
+							}
+						)
+						else
+						(
+						)
+					)
+				)
+			}
+		)
+	}
+	</InstanceHierarchy>
+)

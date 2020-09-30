@@ -1,0 +1,45 @@
+Prefix(:=<http://www.semanticweb.org/aris/ontologies/2019/0/untitled-ontology-181#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/aris/ontologies/2019/0/untitled-ontology-181>
+
+Declaration(Class(:A))
+Declaration(Class(:B))
+Declaration(ObjectProperty(:hasIE))
+Declaration(ObjectProperty(:hasIEInverse))
+Declaration(DataProperty(:weight))
+Declaration(NamedIndividual(:a))
+Declaration(NamedIndividual(:b1))
+############################
+#   Object Properties
+############################
+
+# Object Property: :hasIE (:hasIE)
+
+InverseObjectProperties(:hasIE :hasIEInverse)
+
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :a (:a)
+
+ClassAssertion(:A :a)
+ObjectPropertyAssertion(:hasIE :a :b1)
+
+# Individual: :b1 (:b1)
+
+ClassAssertion(:B :b1)
+DataPropertyAssertion(:weight :b1 "31.0"^^xsd:double)
+
+
+)

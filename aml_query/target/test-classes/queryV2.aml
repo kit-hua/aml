@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CAEXFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" FileName="query.aml" SchemaVersion="2.15" xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd">
+   <AdditionalInformation>
+      <WriterHeader>
+         <WriterName>AutomationML Editor</WriterName>
+         <WriterID>916578CA-FE0D-474E-A4FC-9E1719892369</WriterID>
+         <WriterVendor>AutomationML e.V.</WriterVendor>
+         <WriterVendorURL>www.AutomationML.org</WriterVendorURL>
+         <WriterVersion>4.7.0.0</WriterVersion>
+         <WriterRelease>4.7.0.0</WriterRelease>
+         <LastWritingDateTime>2018-11-09T16:56:22.5292437+01:00</LastWritingDateTime>
+         <WriterProjectTitle>unspecified</WriterProjectTitle>
+         <WriterProjectID>unspecified</WriterProjectID>
+      </WriterHeader>
+   </AdditionalInformation>
+   <AdditionalInformation AutomationMLVersion="2.0" />   
+   <InstanceHierarchy Name="q1">
+      <InternalElement Name="IE1" ID="1c0bc743-18f8-45de-98dd-cb955266c502">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <ExternalInterface Name="EI1" ID="22439e8d-4b86-4555-867e-76271c8c5d9a" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/COLLADAInterface">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+         </ExternalInterface>
+         <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q2">
+      <InternalElement Name="IE1" ID="018b5b5e-56b0-4004-844c-8d3d9ae0c8bd">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <InternalElement Name="IE2" ID="AF138E59-0000-17AC-556E-BC030000331D">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+         </InternalElement>
+         <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q3">
+      <InternalElement Name="IE1" ID="ce38b2f3-d648-4ced-9b91-4afc4b4b32a2">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <ExternalInterface Name="EI1" ID="9552de0e-937e-4542-a376-d3d28cb41b8d" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/COLLADAInterface">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+         </ExternalInterface>
+         <InternalElement Name="IE2" ID="eb7477dd-2bd5-457c-875b-cab101382106">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+         </InternalElement>
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q4">
+      <InternalElement Name="IE1" ID="fb4cc3ce-c2f2-46cb-a9a9-34e5aaf7debc">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <InternalElement Name="IE2" ID="97e9a098-2758-4e26-903f-952aa9b2d7a2">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+         </InternalElement>
+         <InternalElement Name="IE3" ID="f1117413-05b6-496d-8524-d1fc9622fa3d">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+         </InternalElement>
+         <InternalElement Name="IE4" ID="6a21d2a2-64a5-448f-91f8-206c0ce78faa">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+         </InternalElement>
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q5">
+      <InternalElement Name="IE1" ID="2c0f0d11-bcb1-4ae0-b8cc-cae9caea0301">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <Attribute Name="Frame" AttributeDataType="xs:string">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+            </Attribute>
+            <Attribute Name="y" AttributeDataType="xs:double" Unit="m">
+               <Constraint Name="xRequiredValue">
+                  <OrdinalScaledType>
+                     <RequiredMaxValue>5</RequiredMaxValue>
+                     <RequiredMinValue />
+                  </OrdinalScaledType>
+               </Constraint>
+               <Attribute Name="queryConfig">
+                  <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                     <Value>1</Value>
+                  </Attribute>
+                  <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                     <Value>-1</Value>
+                  </Attribute>
+                  <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                     <Value>True</Value>
+                  </Attribute>
+               </Attribute>
+            </Attribute>
+         </Attribute>
+         <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q6">
+      <InternalElement Name="IE1" ID="edb306c4-c492-42b4-9f77-6a6e5c171044">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <ExternalInterface Name="EI1" ID="06350385-dc8e-4959-a2d1-2fef052e9222" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/COLLADAInterface">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <Attribute Name="refURI" AttributeDataType="xs:anyURI">
+               <Constraint Name="">
+                  <OrdinalScaledType>
+                     <RequiredValue>./dae_lib/F19721000063102000100_001_zb_hb_vorrichtung001_layout_kin_Product.dae</RequiredValue>
+                  </OrdinalScaledType>
+               </Constraint>
+               <Attribute Name="queryConfig">
+                  <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                     <Value>1</Value>
+                  </Attribute>
+                  <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                     <Value>-1</Value>
+                  </Attribute>
+                  <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+                  <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                     <Value>False</Value>
+                  </Attribute>
+               </Attribute>
+            </Attribute>
+         </ExternalInterface>
+         <InternalElement Name="IE2" ID="a09ed6d6-34f5-40c9-8210-cc37a197857e">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+         </InternalElement>
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q7">
+      <InternalElement Name="IE1" ID="a0bbcc6b-81e5-407f-8a8a-ba6aebbf8cca">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <Attribute Name="Frame">
+            <RefSemantic CorrespondingAttributePath="abc" />
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+            </Attribute>
+         </Attribute>
+         <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q8">
+      <InternalElement Name="IE1" ID="45f6aa68-c06a-4e91-9fe1-1fe10f528798">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <InternalElement Name="IE2" ID="4ded43bb-e5c1-4b35-9aec-ca8316edfc7b">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+         </InternalElement>
+         <InternalElement Name="IE3" ID="28e296b3-1e7a-41d9-bbd9-43e724d1783e">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>True</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+         </InternalElement>
+         <InternalElement Name="IE4" ID="fc431737-95ee-42e5-8953-22404736f894">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>2</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+            <RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/Clamp" />
+         </InternalElement>
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q9">
+      <InternalElement Name="IE1" ID="07d7ecac-1a39-40f2-8ae3-bc24449331a7">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <ExternalInterface Name="EI1" ID="4162022b-9a20-4092-8758-6bb79f9ce599" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/AttachmentInterface">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+         </ExternalInterface>
+         <InternalLink Name="InternalLink" RefPartnerSideA="[07d7ecac-1a39-40f2-8ae3-bc24449331a7]:[EI1]" RefPartnerSideB="[AF138E59-0000-17AC-556E-B84F00003261]:[Attachment_KRxxxRultra_6_1]" />
+      </InternalElement>
+   </InstanceHierarchy>
+   <InstanceHierarchy Name="q10">
+      <InternalElement Name="IE1" ID="f37d294d-82af-46a3-8ddf-a941cdf988fc">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+               <Value>-1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+         </Attribute>
+         <ExternalInterface Name="EI1" ID="e0900409-c25e-44a8-9e49-d15a3b49e106" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/AttachmentInterface">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="maxCardinality" AttributeDataType="xs:integer">
+                  <Value>-1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>False</Value>
+               </Attribute>
+            </Attribute>
+         </ExternalInterface>
+         <InternalLink Name="InternalLink" RefPartnerSideA="[f37d294d-82af-46a3-8ddf-a941cdf988fc]:[EI1]" RefPartnerSideB="[56bf6d81-2a9c-4580-999e-fda35b745667]:[EI2]" />
+      </InternalElement>
+      <InternalElement Name="IE2" ID="56bf6d81-2a9c-4580-999e-fda35b745667">
+         <Attribute Name="queryConfig">
+            <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="transitive" AttributeDataType="xs:boolean">
+               <Value>False</Value>
+            </Attribute>
+            <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+               <Value>1</Value>
+            </Attribute>
+            <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+               <Value>false</Value>
+            </Attribute>
+            <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+               <Value>false</Value>
+            </Attribute>
+            <Attribute Name="descendant" AttributeDataType="xs:boolean">
+               <Value>True</Value>
+            </Attribute>
+         </Attribute>
+         <ExternalInterface Name="EI2" ID="bcf03834-f6b1-4f0c-bd7d-78559d43299e" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/AttachmentInterface">
+            <Attribute Name="queryConfig">
+               <Attribute Name="distinguished" AttributeDataType="xs:boolean">
+                  <Value>false</Value>
+               </Attribute>
+               <Attribute Name="transitive" AttributeDataType="xs:boolean">
+                  <Value>false</Value>
+               </Attribute>
+               <Attribute Name="minCardinality" AttributeDataType="xs:integer">
+                  <Value>1</Value>
+               </Attribute>
+               <Attribute Name="identifiedById" AttributeDataType="xs:boolean">
+                  <Value>false</Value>
+               </Attribute>
+               <Attribute Name="identifiedByName" AttributeDataType="xs:boolean">
+                  <Value>false</Value>
+               </Attribute>
+               <Attribute Name="descendant" AttributeDataType="xs:boolean">
+                  <Value>false</Value>
+               </Attribute>
+            </Attribute>
+         </ExternalInterface>         
+      </InternalElement>
+   </InstanceHierarchy>
+   <InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+      <Description>Standard Automation Markup Language Interface Class Library - Part 1 Content extended with Part 3 and Part 4 Content</Description>
+      <Version>2.2.2</Version>
+      <InterfaceClass Name="AutomationMLBaseInterface">
+         <InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+            <Attribute Name="Direction" AttributeDataType="xs:string" />
+         </InterfaceClass>
+         <InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+         <InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+         <InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+         <InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+            <Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+            <InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector">
+               <Attribute Name="refType" AttributeDataType="xs:string" />
+               <Attribute Name="target" AttributeDataType="xs:token" />
+            </InterfaceClass>
+            <InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector">
+               <InterfaceClass Name="LogicInterface" RefBaseClassPath="PLCopenXMLInterface">
+                  <InterfaceClass Name="SequencingLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+                  <InterfaceClass Name="BehaviourLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+                  <InterfaceClass Name="SequencingBehaviourLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+                  <InterfaceClass Name="InterlockingLogicInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/LogicInterface" />
+               </InterfaceClass>
+               <InterfaceClass Name="LogicElementInterface" RefBaseClassPath="PLCopenXMLInterface" />
+               <InterfaceClass Name="VariableInterface" RefBaseClassPath="PLCopenXMLInterface">
+                  <InterfaceClass Name="InterlockingVariableInterface" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/ExternalDataConnector/PLCopenXMLInterface/VariableInterface">
+                     <Attribute Name="SafeConditionEquals" AttributeDataType="xs:boolean">
+                        <DefaultValue>True</DefaultValue>
+                     </Attribute>
+                  </InterfaceClass>
+               </InterfaceClass>
+            </InterfaceClass>
+         </InterfaceClass>
+         <InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+            <InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+         </InterfaceClass>
+         <InterfaceClass Name="AttachmentInterface" RefBaseClassPath="AutomationMLBaseInterface" />
+      </InterfaceClass>
+   </InterfaceClassLib>
+   <InterfaceClassLib Name="CommunicationInterfaceClassLib">
+      <InterfaceClass Name="PhysicalEndPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" />
+      <InterfaceClass Name="LogicalEndPoint" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/Communication" />
+   </InterfaceClassLib>
+   <RoleClassLib Name="AutomationMLBaseRoleClassLib">
+      <Description>Automation Markup Language Base Role class Library - Part 1 Content extended with Part 3 Content</Description>
+      <Version>2.2.1</Version>
+      <RoleClass Name="AutomationMLBaseRole">
+         <RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+            <Attribute Name="AssociatedFacet" AttributeDataType="xs:string" />
+         </RoleClass>
+         <RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+         <RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+            <Attribute Name="Direction" AttributeDataType="xs:string" />
+            <Attribute Name="Cardinality">
+               <Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+               <Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+            </Attribute>
+            <Attribute Name="Category" AttributeDataType="xs:string" />
+            <ExternalInterface Name="ConnectionPoint" ID="9942BD9C-C19D-44E4-A197-11B9EDF264E7" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" />
+         </RoleClass>
+         <RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+         <RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+         <RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+         <RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+            <RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+            <RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+            <RoleClass Name="ResourceStructure" RefBaseClassPath="Structure" />
+         </RoleClass>
+         <RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole" />
+         <RoleClass Name="Frame" RefBaseClassPath="AutomationMLBaseRole" />
+      </RoleClass>
+   </RoleClassLib>
+   <RoleClassLib Name="AutomationMLDMIRoleClassLib">
+      <Description>Automation Markup Language  Discrete Manufacturing Industry Role Class Library</Description>
+      <Version>2.4.0</Version>
+      <RoleClass Name="DiscManufacturingEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+         <RoleClass Name="Transport" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Storage" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Fixture" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Gate" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Robot" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Tool" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Carrier" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="Machine" RefBaseClassPath="DiscManufacturingEquipment" />
+         <RoleClass Name="StaticObject" RefBaseClassPath="DiscManufacturingEquipment" />
+      </RoleClass>
+   </RoleClassLib>
+   <RoleClassLib Name="AutomationMLCSRoleClassLib">
+      <Description>Automation Markup Language Control Industry Role Class Library</Description>
+      <Version>2.3.0</Version>
+      <RoleClass Name="ControlEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+         <RoleClass Name="Communication" RefBaseClassPath="ControlEquipment" />
+         <RoleClass Name="ControlHardware" RefBaseClassPath="ControlEquipment">
+            <RoleClass Name="PC" RefBaseClassPath="ControlHardware" />
+            <RoleClass Name="IPC" RefBaseClassPath="ControlHardware" />
+            <RoleClass Name="EmbeddedDevice" RefBaseClassPath="ControlHardware" />
+            <RoleClass Name="Handheld" RefBaseClassPath="ControlHardware" />
+         </RoleClass>
+         <RoleClass Name="Sensor" RefBaseClassPath="ControlEquipment" />
+         <RoleClass Name="Actuator" RefBaseClassPath="ControlEquipment" />
+         <RoleClass Name="Controller" RefBaseClassPath="ControlEquipment">
+            <RoleClass Name="PLC" RefBaseClassPath="Controller" />
+            <RoleClass Name="NC" RefBaseClassPath="Controller" />
+            <RoleClass Name="RC" RefBaseClassPath="Controller" />
+            <RoleClass Name="PAC" RefBaseClassPath="Controller" />
+         </RoleClass>
+      </RoleClass>
+   </RoleClassLib>
+   <RoleClassLib Name="AutomationMLExtendedRoleClassLib">
+      <Version>2.7.0</Version>
+      <RoleClass Name="PLCFacet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" />
+      <RoleClass Name="HMIFacet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" />
+      <RoleClass Name="Enterprise" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="Site" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="Area" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="ProductionLine" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="WorkCell" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="ProcessCell" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="Unit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="ProductionUnit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="StorageZone" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="StorageUnit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+      <RoleClass Name="Turntable" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="Conveyor" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport">
+         <RoleClass Name="BeltConveyor" RefBaseClassPath="Conveyor" />
+         <RoleClass Name="RollConveyor" RefBaseClassPath="Conveyor" />
+         <RoleClass Name="ChainConveyor" RefBaseClassPath="Conveyor" />
+         <RoleClass Name="PalletConveyor" RefBaseClassPath="Conveyor" />
+         <RoleClass Name="OverheadConveyor" RefBaseClassPath="Conveyor" />
+      </RoleClass>
+      <RoleClass Name="LiftingTable" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="AGV" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="Transposer" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="CarrierHandlingSystem" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="BodyStore" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+      <RoleClass Name="Lift" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="Rollerbed" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+      <RoleClass Name="StationaryTool" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" />
+      <RoleClass Name="MovableTool" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" />
+      <RoleClass Name="ControlCabinet" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+      <RoleClass Name="IODevice" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+      <RoleClass Name="HMI" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment">
+         <RoleClass Name="WarningEquipment" RefBaseClassPath="AutomationMLExtendedRoleClassLib/HMI" />
+      </RoleClass>
+      <RoleClass Name="ActuatingDrive" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Actuator" />
+      <RoleClass Name="MotionController" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+      <RoleClass Name="Panel" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/ControlHardware" />
+      <RoleClass Name="MeasuringEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      <RoleClass Name="Clamp" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Fixture" />
+      <RoleClass Name="ProcessController" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Controller" />
+      <RoleClass Name="Loader" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+      <RoleClass Name="Unloader" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+   </RoleClassLib>
+   <RoleClassLib Name="CommunicationRoleClassLib">
+      <RoleClass Name="PhysicalDevice" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+         <RoleClass Name="PhysicalPortList" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+      </RoleClass>
+      <RoleClass Name="PhysicalConnection" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      <RoleClass Name="PhysicalNetwork" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      <RoleClass Name="LogicalDevice" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+         <RoleClass Name="LogicalPortList" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole" />
+      </RoleClass>
+      <RoleClass Name="LogicalConnection" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+      <RoleClass Name="LogicalNetwork" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+   </RoleClassLib>
+</CAEXFile>
